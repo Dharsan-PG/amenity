@@ -1,38 +1,46 @@
-.App {
-  text-align: center;
+:root {
+  --col1: rgba(42, 150, 74, 0.964);
+  --col2: grey;
+  --col3: rgba(216, 199, 199, 0.633);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
+  font-family:'Trebuchet MS', sans-serif;
+  font-weight: 400;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#dropdown-basic {
+  outline: none;
+  border: none;
+  margin: 0px;
+  padding: 0px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.goback {
+  background-color: var(--col1);
   color: white;
+  border: none;
+  outline: none;
+  padding: 5px 20px;
+  border-radius: 5px;
+  font-size: 13px;
+  cursor: pointer;
+  margin: 10px 0px;
+  display: flex;
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.goback svg {
+  margin-right: 5px;
+  width: 15px;
+  height: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.stylenone {
+  text-decoration: none;
+  color: inherit;
 }
